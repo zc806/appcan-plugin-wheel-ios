@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<uexplugins>
+    <plugin uexName="uexWheel" version="3.0.11" build = "11">
+        <info>11:修复全圆轮盘菜单调用close方法无效的问题</info>
+        <build>10:添加监听方法uexWheel.onClick,当点击轮盘中心圆时触发</build>
+        <build>9:转动轮盘，不触发事件（不回调），只有点击转到当前轮盘最上面的一个才触发事件（有回调）点击轮盘中间圆球，触发事件（回调）</build>
+        <build>8:修复进入下一个页面，轮盘插件的button按钮仍然显示的问题</build>
+        <build>7:小图标大小根据轮盘大小确定</build>
+        <build>6:允许横向菜单创建多余5个，并支持滚动</build>
+        <build>5:转动轮盘不收回，只有点击导航图片才收回</build>
+        <build>4:修改open方法效果，在一调用插件就先动画展开，点击导航图片再收缩</build>
+        <build>3:根据宽高 确定轮盘位置和大小</build>
+        <build>2:关闭窗口时关闭轮盘菜单</build>
+        <build>1:修复点击崩溃问题</build>
+        <build>0:轮盘菜单插件</build>
+	</plugin>
+</uexplugins>

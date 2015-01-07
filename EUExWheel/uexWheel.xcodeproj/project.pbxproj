@@ -1,0 +1,495 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3CC232BF19F3A75900A44506 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CC232BE19F3A75900A44506 /* Foundation.framework */; };
+		3CC2331B19F3A7BE00A44506 /* EUExWheel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CC232EA19F3A7BE00A44506 /* EUExWheel.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3CC2331C19F3A7BE00A44506 /* libAppCanEngine_IOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CC232EB19F3A7BE00A44506 /* libAppCanEngine_IOS.a */; };
+		3CC2331D19F3A7BE00A44506 /* MySingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CC232EF19F3A7BE00A44506 /* MySingleton.m */; };
+		3CC2331E19F3A7BE00A44506 /* RNExpandingButtonBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CC232F219F3A7BE00A44506 /* RNExpandingButtonBar.m */; };
+		3CC2331F19F3A7BE00A44506 /* CDCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CC232F519F3A7BE00A44506 /* CDCircle.m */; };
+		3CC2332019F3A7BE00A44506 /* CDCircleGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CC232F719F3A7BE00A44506 /* CDCircleGestureRecognizer.m */; };
+		3CC2332119F3A7BE00A44506 /* CDCircleOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CC232F919F3A7BE00A44506 /* CDCircleOverlayView.m */; };
+		3CC2332219F3A7BE00A44506 /* CDCircleThumb.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CC232FB19F3A7BE00A44506 /* CDCircleThumb.m */; };
+		3CC2332319F3A7BE00A44506 /* CDIconLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CC232FD19F3A7BE00A44506 /* CDIconLabel.m */; };
+		3CC2332419F3A7BE00A44506 /* CDIconView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CC232FF19F3A7BE00A44506 /* CDIconView.m */; };
+		3CC2332519F3A7BE00A44506 /* Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CC2330119F3A7BE00A44506 /* Common.m */; };
+		3CC2332619F3A7BE00A44506 /* Circle.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CC2330319F3A7BE00A44506 /* Circle.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3CC2332719F3A7BE00A44506 /* JCArcButtonWheelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CC2330F19F3A7BE00A44506 /* JCArcButtonWheelView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3CC2332819F3A7BE00A44506 /* MyButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CC2331119F3A7BE00A44506 /* MyButton.m */; };
+		3CC2332919F3A7BE00A44506 /* MyButton2.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CC2331319F3A7BE00A44506 /* MyButton2.m */; };
+		3CC2332A19F3A7BE00A44506 /* Quartercircle.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CC2331519F3A7BE00A44506 /* Quartercircle.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3CC2332B19F3A7BE00A44506 /* MyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CC2331819F3A7BE00A44506 /* MyView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3CC2332C19F3A7BE00A44506 /* Semicircle.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CC2331A19F3A7BE00A44506 /* Semicircle.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3CC2333519F3A86500A44506 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CC2332D19F3A86500A44506 /* AudioToolbox.framework */; };
+		3CC2333619F3A86500A44506 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CC2332E19F3A86500A44506 /* MapKit.framework */; };
+		3CC2333719F3A86500A44506 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CC2332F19F3A86500A44506 /* CoreTelephony.framework */; };
+		3CC2333819F3A86500A44506 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CC2333019F3A86500A44506 /* MobileCoreServices.framework */; };
+		3CC2333919F3A86500A44506 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CC2333119F3A86500A44506 /* SystemConfiguration.framework */; };
+		3CC2333A19F3A86500A44506 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CC2333219F3A86500A44506 /* libsqlite3.dylib */; };
+		3CC2333B19F3A86500A44506 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CC2333319F3A86500A44506 /* libz.dylib */; };
+		3CC2333C19F3A86500A44506 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CC2333419F3A86500A44506 /* UIKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3CC232B919F3A75900A44506 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3CC232BB19F3A75900A44506 /* uexWheel.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = uexWheel.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CC232BE19F3A75900A44506 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3CC232E519F3A7BE00A44506 /* EUExBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EUExBase.h; sourceTree = "<group>"; };
+		3CC232E619F3A7BE00A44506 /* EUExBaseDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EUExBaseDefine.h; sourceTree = "<group>"; };
+		3CC232E719F3A7BE00A44506 /* EUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EUtility.h; sourceTree = "<group>"; };
+		3CC232E819F3A7BE00A44506 /* EUExWheel-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "EUExWheel-Prefix.pch"; path = "EUExWheel/EUExWheel-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		3CC232E919F3A7BE00A44506 /* EUExWheel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EUExWheel.h; path = EUExWheel/EUExWheel.h; sourceTree = SOURCE_ROOT; };
+		3CC232EA19F3A7BE00A44506 /* EUExWheel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EUExWheel.m; path = EUExWheel/EUExWheel.m; sourceTree = SOURCE_ROOT; };
+		3CC232EB19F3A7BE00A44506 /* libAppCanEngine_IOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAppCanEngine_IOS.a; path = EUExWheel/libAppCanEngine_IOS.a; sourceTree = SOURCE_ROOT; };
+		3CC232EE19F3A7BE00A44506 /* MySingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MySingleton.h; sourceTree = "<group>"; };
+		3CC232EF19F3A7BE00A44506 /* MySingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MySingleton.m; sourceTree = "<group>"; };
+		3CC232F119F3A7BE00A44506 /* RNExpandingButtonBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNExpandingButtonBar.h; sourceTree = "<group>"; };
+		3CC232F219F3A7BE00A44506 /* RNExpandingButtonBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNExpandingButtonBar.m; sourceTree = "<group>"; };
+		3CC232F419F3A7BE00A44506 /* CDCircle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDCircle.h; sourceTree = "<group>"; };
+		3CC232F519F3A7BE00A44506 /* CDCircle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDCircle.m; sourceTree = "<group>"; };
+		3CC232F619F3A7BE00A44506 /* CDCircleGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDCircleGestureRecognizer.h; sourceTree = "<group>"; };
+		3CC232F719F3A7BE00A44506 /* CDCircleGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDCircleGestureRecognizer.m; sourceTree = "<group>"; };
+		3CC232F819F3A7BE00A44506 /* CDCircleOverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDCircleOverlayView.h; sourceTree = "<group>"; };
+		3CC232F919F3A7BE00A44506 /* CDCircleOverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDCircleOverlayView.m; sourceTree = "<group>"; };
+		3CC232FA19F3A7BE00A44506 /* CDCircleThumb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDCircleThumb.h; sourceTree = "<group>"; };
+		3CC232FB19F3A7BE00A44506 /* CDCircleThumb.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDCircleThumb.m; sourceTree = "<group>"; };
+		3CC232FC19F3A7BE00A44506 /* CDIconLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDIconLabel.h; sourceTree = "<group>"; };
+		3CC232FD19F3A7BE00A44506 /* CDIconLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDIconLabel.m; sourceTree = "<group>"; };
+		3CC232FE19F3A7BE00A44506 /* CDIconView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDIconView.h; sourceTree = "<group>"; };
+		3CC232FF19F3A7BE00A44506 /* CDIconView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDIconView.m; sourceTree = "<group>"; };
+		3CC2330019F3A7BE00A44506 /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
+		3CC2330119F3A7BE00A44506 /* Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Common.m; sourceTree = "<group>"; };
+		3CC2330219F3A7BE00A44506 /* Circle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Circle.h; sourceTree = "<group>"; };
+		3CC2330319F3A7BE00A44506 /* Circle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Circle.m; sourceTree = "<group>"; };
+		3CC2330519F3A7BE00A44506 /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
+		3CC2330619F3A7BE00A44506 /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
+		3CC2330719F3A7BE00A44506 /* NSString+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SBJSON.h"; sourceTree = "<group>"; };
+		3CC2330819F3A7BE00A44506 /* SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJSON.h; sourceTree = "<group>"; };
+		3CC2330919F3A7BE00A44506 /* SBJsonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonBase.h; sourceTree = "<group>"; };
+		3CC2330A19F3A7BE00A44506 /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		3CC2330B19F3A7BE00A44506 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		3CC2330E19F3A7BE00A44506 /* JCArcButtonWheelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCArcButtonWheelView.h; sourceTree = "<group>"; };
+		3CC2330F19F3A7BE00A44506 /* JCArcButtonWheelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCArcButtonWheelView.m; sourceTree = "<group>"; };
+		3CC2331019F3A7BE00A44506 /* MyButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyButton.h; sourceTree = "<group>"; };
+		3CC2331119F3A7BE00A44506 /* MyButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyButton.m; sourceTree = "<group>"; };
+		3CC2331219F3A7BE00A44506 /* MyButton2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyButton2.h; sourceTree = "<group>"; };
+		3CC2331319F3A7BE00A44506 /* MyButton2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyButton2.m; sourceTree = "<group>"; };
+		3CC2331419F3A7BE00A44506 /* Quartercircle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Quartercircle.h; sourceTree = "<group>"; };
+		3CC2331519F3A7BE00A44506 /* Quartercircle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Quartercircle.m; sourceTree = "<group>"; };
+		3CC2331719F3A7BE00A44506 /* MyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyView.h; sourceTree = "<group>"; };
+		3CC2331819F3A7BE00A44506 /* MyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyView.m; sourceTree = "<group>"; };
+		3CC2331919F3A7BE00A44506 /* Semicircle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Semicircle.h; sourceTree = "<group>"; };
+		3CC2331A19F3A7BE00A44506 /* Semicircle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Semicircle.m; sourceTree = "<group>"; };
+		3CC2332D19F3A86500A44506 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		3CC2332E19F3A86500A44506 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		3CC2332F19F3A86500A44506 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		3CC2333019F3A86500A44506 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		3CC2333119F3A86500A44506 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		3CC2333219F3A86500A44506 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		3CC2333319F3A86500A44506 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		3CC2333419F3A86500A44506 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3CC232B819F3A75900A44506 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CC2331C19F3A7BE00A44506 /* libAppCanEngine_IOS.a in Frameworks */,
+				3CC2333919F3A86500A44506 /* SystemConfiguration.framework in Frameworks */,
+				3CC232BF19F3A75900A44506 /* Foundation.framework in Frameworks */,
+				3CC2333719F3A86500A44506 /* CoreTelephony.framework in Frameworks */,
+				3CC2333819F3A86500A44506 /* MobileCoreServices.framework in Frameworks */,
+				3CC2333B19F3A86500A44506 /* libz.dylib in Frameworks */,
+				3CC2333619F3A86500A44506 /* MapKit.framework in Frameworks */,
+				3CC2333A19F3A86500A44506 /* libsqlite3.dylib in Frameworks */,
+				3CC2333519F3A86500A44506 /* AudioToolbox.framework in Frameworks */,
+				3CC2333C19F3A86500A44506 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3CC232B219F3A75900A44506 = {
+			isa = PBXGroup;
+			children = (
+				3CC232C019F3A75900A44506 /* uexWheel */,
+				3CC232BD19F3A75900A44506 /* Frameworks */,
+				3CC232BC19F3A75900A44506 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3CC232BC19F3A75900A44506 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3CC232BB19F3A75900A44506 /* uexWheel.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3CC232BD19F3A75900A44506 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3CC2332D19F3A86500A44506 /* AudioToolbox.framework */,
+				3CC2332E19F3A86500A44506 /* MapKit.framework */,
+				3CC2332F19F3A86500A44506 /* CoreTelephony.framework */,
+				3CC2333019F3A86500A44506 /* MobileCoreServices.framework */,
+				3CC2333119F3A86500A44506 /* SystemConfiguration.framework */,
+				3CC2333219F3A86500A44506 /* libsqlite3.dylib */,
+				3CC2333319F3A86500A44506 /* libz.dylib */,
+				3CC2333419F3A86500A44506 /* UIKit.framework */,
+				3CC232BE19F3A75900A44506 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3CC232C019F3A75900A44506 /* uexWheel */ = {
+			isa = PBXGroup;
+			children = (
+				3CC232E419F3A7BE00A44506 /* engineHeader */,
+				3CC232E819F3A7BE00A44506 /* EUExWheel-Prefix.pch */,
+				3CC232E919F3A7BE00A44506 /* EUExWheel.h */,
+				3CC232EA19F3A7BE00A44506 /* EUExWheel.m */,
+				3CC232EB19F3A7BE00A44506 /* libAppCanEngine_IOS.a */,
+				3CC232EC19F3A7BE00A44506 /* sourceCode */,
+			);
+			path = uexWheel;
+			sourceTree = "<group>";
+		};
+		3CC232E419F3A7BE00A44506 /* engineHeader */ = {
+			isa = PBXGroup;
+			children = (
+				3CC232E519F3A7BE00A44506 /* EUExBase.h */,
+				3CC232E619F3A7BE00A44506 /* EUExBaseDefine.h */,
+				3CC232E719F3A7BE00A44506 /* EUtility.h */,
+			);
+			name = engineHeader;
+			path = EUExWheel/engineHeader;
+			sourceTree = SOURCE_ROOT;
+		};
+		3CC232EC19F3A7BE00A44506 /* sourceCode */ = {
+			isa = PBXGroup;
+			children = (
+				3CC232ED19F3A7BE00A44506 /* circle */,
+				3CC2330219F3A7BE00A44506 /* Circle.h */,
+				3CC2330319F3A7BE00A44506 /* Circle.m */,
+				3CC2330419F3A7BE00A44506 /* JSON */,
+				3CC2330C19F3A7BE00A44506 /* quartercircle */,
+				3CC2331419F3A7BE00A44506 /* Quartercircle.h */,
+				3CC2331519F3A7BE00A44506 /* Quartercircle.m */,
+				3CC2331619F3A7BE00A44506 /* semicircle */,
+				3CC2331919F3A7BE00A44506 /* Semicircle.h */,
+				3CC2331A19F3A7BE00A44506 /* Semicircle.m */,
+			);
+			name = sourceCode;
+			path = EUExWheel/sourceCode;
+			sourceTree = SOURCE_ROOT;
+		};
+		3CC232ED19F3A7BE00A44506 /* circle */ = {
+			isa = PBXGroup;
+			children = (
+				3CC232EE19F3A7BE00A44506 /* MySingleton.h */,
+				3CC232EF19F3A7BE00A44506 /* MySingleton.m */,
+				3CC232F019F3A7BE00A44506 /* RNExpandingButtonBar */,
+				3CC232F319F3A7BE00A44506 /* Wheel */,
+			);
+			path = circle;
+			sourceTree = "<group>";
+		};
+		3CC232F019F3A7BE00A44506 /* RNExpandingButtonBar */ = {
+			isa = PBXGroup;
+			children = (
+				3CC232F119F3A7BE00A44506 /* RNExpandingButtonBar.h */,
+				3CC232F219F3A7BE00A44506 /* RNExpandingButtonBar.m */,
+			);
+			path = RNExpandingButtonBar;
+			sourceTree = "<group>";
+		};
+		3CC232F319F3A7BE00A44506 /* Wheel */ = {
+			isa = PBXGroup;
+			children = (
+				3CC232F419F3A7BE00A44506 /* CDCircle.h */,
+				3CC232F519F3A7BE00A44506 /* CDCircle.m */,
+				3CC232F619F3A7BE00A44506 /* CDCircleGestureRecognizer.h */,
+				3CC232F719F3A7BE00A44506 /* CDCircleGestureRecognizer.m */,
+				3CC232F819F3A7BE00A44506 /* CDCircleOverlayView.h */,
+				3CC232F919F3A7BE00A44506 /* CDCircleOverlayView.m */,
+				3CC232FA19F3A7BE00A44506 /* CDCircleThumb.h */,
+				3CC232FB19F3A7BE00A44506 /* CDCircleThumb.m */,
+				3CC232FC19F3A7BE00A44506 /* CDIconLabel.h */,
+				3CC232FD19F3A7BE00A44506 /* CDIconLabel.m */,
+				3CC232FE19F3A7BE00A44506 /* CDIconView.h */,
+				3CC232FF19F3A7BE00A44506 /* CDIconView.m */,
+				3CC2330019F3A7BE00A44506 /* Common.h */,
+				3CC2330119F3A7BE00A44506 /* Common.m */,
+			);
+			path = Wheel;
+			sourceTree = "<group>";
+		};
+		3CC2330419F3A7BE00A44506 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				3CC2330519F3A7BE00A44506 /* JSON.h */,
+				3CC2330619F3A7BE00A44506 /* NSObject+SBJSON.h */,
+				3CC2330719F3A7BE00A44506 /* NSString+SBJSON.h */,
+				3CC2330819F3A7BE00A44506 /* SBJSON.h */,
+				3CC2330919F3A7BE00A44506 /* SBJsonBase.h */,
+				3CC2330A19F3A7BE00A44506 /* SBJsonParser.h */,
+				3CC2330B19F3A7BE00A44506 /* SBJsonWriter.h */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		3CC2330C19F3A7BE00A44506 /* quartercircle */ = {
+			isa = PBXGroup;
+			children = (
+				3CC2330D19F3A7BE00A44506 /* JCArcButtonWheelView */,
+				3CC2331019F3A7BE00A44506 /* MyButton.h */,
+				3CC2331119F3A7BE00A44506 /* MyButton.m */,
+				3CC2331219F3A7BE00A44506 /* MyButton2.h */,
+				3CC2331319F3A7BE00A44506 /* MyButton2.m */,
+			);
+			path = quartercircle;
+			sourceTree = "<group>";
+		};
+		3CC2330D19F3A7BE00A44506 /* JCArcButtonWheelView */ = {
+			isa = PBXGroup;
+			children = (
+				3CC2330E19F3A7BE00A44506 /* JCArcButtonWheelView.h */,
+				3CC2330F19F3A7BE00A44506 /* JCArcButtonWheelView.m */,
+			);
+			path = JCArcButtonWheelView;
+			sourceTree = "<group>";
+		};
+		3CC2331619F3A7BE00A44506 /* semicircle */ = {
+			isa = PBXGroup;
+			children = (
+				3CC2331719F3A7BE00A44506 /* MyView.h */,
+				3CC2331819F3A7BE00A44506 /* MyView.m */,
+			);
+			path = semicircle;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3CC232BA19F3A75900A44506 /* uexWheel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CC232DE19F3A75900A44506 /* Build configuration list for PBXNativeTarget "uexWheel" */;
+			buildPhases = (
+				3CC232B719F3A75900A44506 /* Sources */,
+				3CC232B819F3A75900A44506 /* Frameworks */,
+				3CC232B919F3A75900A44506 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = uexWheel;
+			productName = uexWheel;
+			productReference = 3CC232BB19F3A75900A44506 /* uexWheel.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3CC232B319F3A75900A44506 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = com.zywx;
+			};
+			buildConfigurationList = 3CC232B619F3A75900A44506 /* Build configuration list for PBXProject "uexWheel" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3CC232B219F3A75900A44506;
+			productRefGroup = 3CC232BC19F3A75900A44506 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3CC232BA19F3A75900A44506 /* uexWheel */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3CC232B719F3A75900A44506 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CC2332319F3A7BE00A44506 /* CDIconLabel.m in Sources */,
+				3CC2332619F3A7BE00A44506 /* Circle.m in Sources */,
+				3CC2332919F3A7BE00A44506 /* MyButton2.m in Sources */,
+				3CC2332C19F3A7BE00A44506 /* Semicircle.m in Sources */,
+				3CC2332019F3A7BE00A44506 /* CDCircleGestureRecognizer.m in Sources */,
+				3CC2332B19F3A7BE00A44506 /* MyView.m in Sources */,
+				3CC2332819F3A7BE00A44506 /* MyButton.m in Sources */,
+				3CC2332519F3A7BE00A44506 /* Common.m in Sources */,
+				3CC2331B19F3A7BE00A44506 /* EUExWheel.m in Sources */,
+				3CC2332419F3A7BE00A44506 /* CDIconView.m in Sources */,
+				3CC2332119F3A7BE00A44506 /* CDCircleOverlayView.m in Sources */,
+				3CC2331E19F3A7BE00A44506 /* RNExpandingButtonBar.m in Sources */,
+				3CC2332719F3A7BE00A44506 /* JCArcButtonWheelView.m in Sources */,
+				3CC2332A19F3A7BE00A44506 /* Quartercircle.m in Sources */,
+				3CC2331F19F3A7BE00A44506 /* CDCircle.m in Sources */,
+				3CC2331D19F3A7BE00A44506 /* MySingleton.m in Sources */,
+				3CC2332219F3A7BE00A44506 /* CDCircleThumb.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		3CC232DC19F3A75900A44506 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				VALID_ARCHS = "armv7 armv7s";
+			};
+			name = Debug;
+		};
+		3CC232DD19F3A75900A44506 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "armv7 armv7s";
+			};
+			name = Release;
+		};
+		3CC232DF19F3A75900A44506 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Wang GuoChun (GJL3LN9D59)";
+				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/uexWheel/";
+				DSTROOT = /tmp/uexWheel.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EUExWheel/EUExWheel-Prefix.pch";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/EUExWheel",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		3CC232E019F3A75900A44506 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Wang GuoChun (GJL3LN9D59)";
+				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/uexWheel/";
+				DSTROOT = /tmp/uexWheel.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EUExWheel/EUExWheel-Prefix.pch";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/EUExWheel",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3CC232B619F3A75900A44506 /* Build configuration list for PBXProject "uexWheel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CC232DC19F3A75900A44506 /* Debug */,
+				3CC232DD19F3A75900A44506 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3CC232DE19F3A75900A44506 /* Build configuration list for PBXNativeTarget "uexWheel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CC232DF19F3A75900A44506 /* Debug */,
+				3CC232E019F3A75900A44506 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3CC232B319F3A75900A44506 /* Project object */;
+}

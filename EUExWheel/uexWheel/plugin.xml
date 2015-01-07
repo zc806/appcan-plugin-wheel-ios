@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<uexplugins>
+    <plugin name="uexWheel">
+        <method name="openCircle"></method>
+        <method name="closeCircle"></method>
+        <method name="openSemicircle"></method>
+        <method name="closeSemicircle"></method>
+        <method name="openQuartercircle"></method>
+        <method name="closeQuartercircle"></method>
+    </plugin>
+</uexplugins>
